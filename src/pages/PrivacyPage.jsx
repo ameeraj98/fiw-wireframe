@@ -21,7 +21,7 @@ const PrivacyPage = () => {
           
 {/* Introduction */}
 <div className="prose prose-invert max-w-none">
-  <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500 mb-6">Overview</h2>
+  <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500 mb-6">Overview</h2>
   <p className="opacity-70 leading-relaxed">
     At The Future is Wild Glenorchy, we are committed to protecting the privacy and security of our visitors. This policy explains how we collect, use, and safeguard your information when you visit our physical site, use our AR/VR technology, or interact with our digital platforms.
   </p>

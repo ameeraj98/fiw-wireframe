@@ -21,7 +21,7 @@ const TermsPage = () => {
           
           {/* 1. Ticketing & 15% Trust */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500">1. Ticketing & Conservation</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500">1. Ticketing & Conservation</h2>
             <p className="opacity-70 leading-relaxed">
               All ticket sales are final. By purchasing a ticket, you acknowledge that **15% of the net profit** is non-refundable and designated for the <span className="text-white font-bold">Future is Wild Environmental Trust</span>. Your ticket also covers the planting of one native tree through our reforestation partnerships.
             </p>
@@ -29,7 +29,7 @@ const TermsPage = () => {
 
           {/* 2. VR/AR Technology Use */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500">2. Technology & Equipment</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500">2. Technology & Equipment</h2>
             <p className="opacity-70 leading-relaxed">
               Visitors using company-provided VR headsets or AR devices agree to handle equipment with care. Liability for intentional damage to hardware rests with the visitor. We are not responsible for motion sickness or visual fatigue resulting from prolonged use of speculative biology simulations.
             </p>
@@ -37,7 +37,7 @@ const TermsPage = () => {
 
           {/* 3. Site Conduct - Leave No Trace */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500">3. Physical Site Conduct</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500">3. Physical Site Conduct</h2>
             <p className="opacity-70 leading-relaxed">
               To protect the Dart Valley ecosystem, visitors must adhere to our <span className="text-white italic">"Leave No Trace"</span> policy. This includes:
             </p>
@@ -50,7 +50,7 @@ const TermsPage = () => {
 
           {/* 4. Intellectual Property */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500">4. Speculative Biology IP</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500">4. Speculative Biology IP</h2>
             <p className="opacity-70 leading-relaxed">
               All creature designs, environmental renderings, and speculative biological data presented are the intellectual property of **The Future is Wild Ltd**. Photography for personal use is encouraged, but commercial reproduction of AR creature models is strictly prohibited.
             </p>
@@ -58,7 +58,7 @@ const TermsPage = () => {
 
                     {/* 5. Safety & Liability  */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500">5. Safety & Liability </h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500">5. Safety & Liability </h2>
             <p className="opacity-70 leading-relaxed">
 While we use non-invasive technology to minimize impact, the Glenorchy Hillocks remain a natural outdoor environment. The Future is Wild Ltd is not liable for injuries sustained due to off-trail wandering or disregard for weather warnings in the Whakatipu Basin.
             </p>

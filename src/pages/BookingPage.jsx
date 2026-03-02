@@ -4,14 +4,13 @@ const BookingPage = () => {
   return (
     <div className="bg-base-300 min-h-screen">
       {/* HEADER SECTION */}
-      <section className="py-20 bg-base-200 border-b border-white/5">
+      <section className="py-24 bg-base-200 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter">
-            Booking page
+            <span className="text-emerald-500">Book </span> with us
           </h1>
-          <p className="mt-4 text-xl opacity-70 max-w-2xl mx-auto">
-            Check availability and book your immersive time-travel experience. 
-            The future is closer than you think.
+          <p className="mt-4 text-xl opacity-70 max-w-2xl mx-auto leading-relaxed">
+            Check availability and book your immersive time-travel experience. The future is closer than you think.
           </p>
         </div>
       </section>
@@ -69,9 +68,27 @@ const BookingPage = () => {
                     className="w-full bg-base-300 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-500 transition-colors"
                   />
                 </div>
-                <button className="w-full btn bg-emerald-500 hover:bg-emerald-600 text-neutral-900 border-none font-black uppercase tracking-tighter h-14">
-                  Join Pre-Launch List
-                </button>
+                
+                {/* JOIN PRE-LAUNCH LIST BUTTON */}
+                <button 
+                type="submit" 
+                className="w-full group relative inline-flex items-center justify-center px-8 min-h-[50px] rounded-lg bg-emerald-500 backdrop-blur-md text-base-content font-semibold tracking-wide shadow-xl shadow-emerald-500/20 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-emerald-500/20  hover:scale-105  overflow-hidden "
+>
+  {/* The Animated Shine Effect */}
+  <span className="
+    absolute inset-0
+    bg-gradient-to-r from-transparent via-white/30 to-transparent
+    -translate-x-[150%] group-hover:translate-x-[150%]
+    transition-transform duration-700 ease-out
+  " />
+
+  <span className="relative z-10 flex items-center justify-center gap-2">
+    Join Pre-launch List
+
+  </span>
+</button>
+
+                
                 <p className="text-xl
                  opacity-40 text-center mt-4">
                   By joining, you agree to receive communications regarding the 2026 Glenorchy opening.

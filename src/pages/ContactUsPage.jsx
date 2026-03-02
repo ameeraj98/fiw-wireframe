@@ -2,15 +2,17 @@ import React from 'react';
 
 const ContactUsPage = () => {
   return (
+
+    
     <div className="bg-base-300 min-h-screen">
       {/* HEADER SECTION */}
       <section className="py-24 bg-base-200 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter">
-            Get in Touch
+            <span className="text-emerald-500">Contact </span> us
           </h1>
           <p className="mt-4 text-xl opacity-70 max-w-2xl mx-auto leading-relaxed">
-            Have questions about our speculative world? Whether you're planning a school trip or a media visit, our team is here to help.
+            Have questions about our speculative world? Whether you’re curious about the science behind our habitats or ready to book your passage, our team is here to guide you.
           </p>
         </div>
       </section>
@@ -19,12 +21,14 @@ const ContactUsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
 {/* LEFT SIDE: DIRECT CONTACT INFO */}
-<div className="space-y-10">
+
+
+
+
+<div className="space-y-2">
   <div>
-    <h2 className="text-3xl font-black uppercase tracking-tighter mb-8">
-      Contact Details
-    </h2>
-    <div className="space-y-8 mb-10">
+    <h2 className="text-3xl font-bold mb-6 italic text-base-content">Contact Details</h2>
+  <div className="space-y-8 mb-10">
       {/* Location */}
       <div className="flex items-start gap-5">
         <div className="w-12 h-12 bg-base-200 border border-emerald-500/20 rounded-2xl flex items-center justify-center text-emerald-500 shrink-0 shadow-lg">
@@ -75,17 +79,19 @@ const ContactUsPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="form-control w-full">
                   <label className="mb-3"><span className="text-xs font-bold uppercase tracking-widest opacity-40">Your Name</span></label>
-                  <input type="text" placeholder="John Doe" className="input input-bordered w-full bg-base-300 border-white/10 focus:border-emerald-500 rounded-xl h-14" required />
+                  <input type="text" placeholder="John Doe" 
+                  className="input input-bordered w-full bg-base-300  focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 h-14" required />
+                  
                 </div>
                 <div className="form-control w-full">
                   <label className="mb-3"><span className="text-xs font-bold uppercase tracking-widest opacity-40">Email Address</span></label>
-                  <input type="email" placeholder="john@example.com" className="input input-bordered w-full bg-base-300 border-white/10 focus:border-emerald-500 rounded-xl h-14" required />
+                  <input type="email" placeholder="john@example.com" className="input input-bordered w-full bg-base-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 h-14" required />
                 </div>
               </div>
 
               <div className="form-control w-full">
                 <label className="mb-3"><span className="text-xs font-bold uppercase tracking-widest opacity-40">Subject</span></label>
-                <select className="select select-bordered w-full bg-base-300 border-white/10 focus:border-emerald-500 rounded-xl h-14">
+                <select className="select select-bordered w-full bg-base-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 h-14">
                   <option disabled selected>Select an option</option>
                   <option>General Inquiry</option>
                   <option>School/Education Booking</option>
@@ -97,14 +103,31 @@ const ContactUsPage = () => {
               <div className="form-control w-full">
                 <label className="mb-3"><span className="text-xs font-bold uppercase tracking-widest opacity-40">Message</span></label>
                 <textarea 
-                  className="textarea textarea-bordered w-full bg-base-300 border-white/10 focus:border-emerald-500 rounded-xl h-40 pt-4" 
+                  className="textarea textarea-bordered w-full bg-base-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 h-40 pt-4" 
                   placeholder="How can we help you explore the future?"
                 ></textarea>
               </div>
 
-              <button className="btn bg-emerald-500 border-none text-black w-full h-16 rounded-xl font-black uppercase tracking-[0.2em] text-sm">
-                Send Message
-              </button>
+{/* SEND MESSAGE BUTTON */}
+                <button 
+                type="submit" 
+                className="w-full group relative inline-flex items-center justify-center px-8 min-h-[50px] rounded-lg bg-emerald-500 backdrop-blur-md text-base-content font-semibold tracking-wide shadow-xl shadow-emerald-500/20 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-emerald-500/20  hover:scale-105  overflow-hidden "
+>
+  {/* The Animated Shine Effect */}
+  <span className="
+    absolute inset-0
+    bg-gradient-to-r from-transparent via-white/30 to-transparent
+    -translate-x-[150%] group-hover:translate-x-[150%]
+    transition-transform duration-700 ease-out
+  " />
+
+  <span className="relative z-10 flex items-center justify-center gap-2">
+    Send message
+
+  </span>
+</button>
+
+              
             </form>
           </div>
 

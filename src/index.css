@@ -2,11 +2,7 @@
 @plugin "daisyui";
 
 @layer base {
-  /* High contrast background for Dark Mode Section 2.4 */
-  html, body {
-    background-color: #0f172a; 
-    color: #f8fafc;
-  }
+
 
   /* WCAG 2.1 AA: CLEAR FOCUS STATES */
   /* Ensures keyboard users see a bright ring around active elements */

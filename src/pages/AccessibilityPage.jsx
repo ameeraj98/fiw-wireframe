@@ -21,7 +21,7 @@ const AccessibilityPage = () => {
           
           {/* Our Commitment */}
           <section>
-            <h2 className="text-2xl font-black uppercase tracking-widest text-white mb-6">Our Commitment</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-white mb-6">Our Commitment</h2>
             <p className="opacity-70 leading-relaxed text-xl">
               Hillocks Holdings Ltd  is dedicated to digital and physical inclusivity. We believe that technology should act as a bridge, not a barrier, allowing all visitors to explore the Glenorchy Hillocks and our speculative future.
             </p>
@@ -48,7 +48,7 @@ const AccessibilityPage = () => {
 
           {/* Physical Site Info */}
           <section className="space-y-6">
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500">On-Site Accessibility</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500">On-Site Accessibility</h2>
             <div className="text-xl space-y-4 opacity-70 leading-relaxed">
               <p>While the Glenorchy Hillocks is a natural environment, we have taken steps to ensure the experience is accessible:</p>
               <ul className="list-disc list-inside space-y-2 ml-4">

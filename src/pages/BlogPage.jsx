@@ -31,7 +31,7 @@ const BlogPage = () => {
       <section className="py-24 bg-base-200 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter">
-            Blogs & <span className="text-emerald-500">News</span>
+            <span className="text-emerald-500">Blogs </span> and News
           </h1>
           <p className="mt-4 text-xl opacity-70 max-w-2xl mx-auto leading-relaxed">
             Dispatches from the intersection of technology and ecology. Stay updated on our rewilding milestones, VR breakthroughs, and the evolving story of the Glenorchy Hillocks.
@@ -57,7 +57,7 @@ const BlogPage = () => {
               {/* Content */}
               <div className="p-8 flex flex-col flex-grow">
                 <time className="text-xs opacity-40 font-mono mb-3">{post.date}</time>
-                <h2 className="text-2xl font-bold text-white mb-4 leading-tight">
+                <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
                   {post.title}
                 </h2>
                 <p className="text-sm opacity-60 leading-relaxed mb-8 flex-grow">

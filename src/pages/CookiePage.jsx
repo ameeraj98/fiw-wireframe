@@ -21,7 +21,7 @@ const CookiePage = () => {
           
           {/* 1. What are Cookies */}
           <section>
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500 mb-6">1. What are Cookies?</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500 mb-6">1. What are Cookies?</h2>
             <p className="text-xl opacity-70 leading-relaxed">
               Cookies are small text files stored on your device that help us remember your preferences, track session data for our VR integrations, and understand how you interact with our digital rewilding updates. 
             </p>
@@ -29,7 +29,7 @@ const CookiePage = () => {
 
           {/* 2. How we use them - The Grid */}
           <section>
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500 mb-8">2. Cookie Categories</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500 mb-8">2. Cookie Categories</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-8 bg-base-200 border border-white/5 rounded-3xl">
                 <h4 className="text-emerald-500 font-bold mb-3 uppercase tracking-widest text-xl">Essential</h4>
@@ -60,7 +60,7 @@ const CookiePage = () => {
 
           {/* 3. Third Party Cookies */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-black uppercase tracking-widest text-emerald-500">3. Third-Party Integrations</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-emerald-500">3. Third-Party Integrations</h2>
             <p className="text-xl opacity-70 leading-relaxed">
               We use trusted services like Google Analytics and Stripe for secure payments. These partners may set their own cookies to provide their services. We do not sell any data collected through these cookies to third parties.
             </p>
