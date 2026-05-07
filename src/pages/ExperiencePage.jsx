@@ -16,12 +16,12 @@ const ExperiencePage = () => {
     {
       step: "03",
       title: "AR Self Guided Return",
-      desc: "After Hide 4, visitors return independently to the visitor centre, encountering 4-5 AR stations:"
+      desc: "After Hide 4, visitors proceed to the AR Experience, encountering 4-5 AR stations."
     },
     {
       step: "04",
       title: "End of Journey",
-      desc: "Return back to the Visitor Center after completing the journeys"
+      desc: "Return back to the Visitor Center after completing the journeys."
     }
   ];
 
@@ -31,10 +31,10 @@ const ExperiencePage = () => {
       <section className="py-16 bg-base-200 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
-            The Visitor Journey
+            The Experience
           </h1>
           <p className="mt-4 text-xl opacity-70 max-w-2xl">
-            A seamless blend of physical hiking and digital discovery across the Glenorchy Hillocks.
+            A 1.5km looped route through the Southern Hillocks, featuring four discrete viewing hides and an elevated AR platform.
           </p>
         </div>
       </section>
@@ -138,7 +138,7 @@ const ExperiencePage = () => {
       <div className="space-y-10 order-2 lg:order-1">
         {/* Section Title & Description */}
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">VR Hide Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">VR Experience</h2>
           <p className="text-xl opacity-70 leading-relaxed">
             Immerse yourself in a 360-degree speculative evolution experience from the safety of our VR Hides.
           </p>
@@ -211,9 +211,9 @@ const ExperiencePage = () => {
       <div className="space-y-10">
         {/* Section Title & Description moved here */}
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">AR Station Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">AR Experience</h2>
           <p className="text-xl opacity-70 leading-relaxed">
-            Use your mobile/tablet device to bring extinct giants to life in the palm of your hand as you return to the visitor centre.
+            Use your mobile/tablet device to bring extinct giants to life in the palm of your hand upon completion of VR hides.
           </p>
         </div>
 
@@ -221,23 +221,23 @@ const ExperiencePage = () => {
         <div className="space-y-6">
           {[
             { 
-              title: "AR Station 1: Encounter the Moa", 
+              title: "Moa Lookout", 
               desc: "Witness the return of a giant in a life-sized encounter, where you can interact with and capture photos of this legendary flightless icon." 
             },
             { 
-              title: "AR Station 2: Haast Eagle Experience", 
+              title: "Haast Eagle Lookout", 
               desc: "Experience the sheer scale of the world’s largest eagle as its 3-meter wingspan sweeps across the sky for an unforgettable video moment." 
             },
             { 
-              title: "AR Station 3: Feed a Kiwi", 
+              title: "Kiwi Lookout", 
               desc: "Get up close with New Zealand's national icon to observe unique feeding behaviors through an interactive and educational lens." 
             },
             { 
-              title: "AR Station 4: Ancient Forest Immersion", 
+              title: "Ancient Forest Immersion Lookout", 
               desc: "Step into a pre-human sanctuary to discover a hidden world of extinct and rare species that once ruled the New Zealand wilderness." 
             },
                         { 
-              title: "AR Station 5: Ice Age Valley", 
+              title: "Ice Age Valley Lookout", 
               desc: "Compare the present-day landscape with a frozen past, using your lens to reveal towering glaciers as they appeared at the end of the last ice age." 
             }
           ].map((hide, i) => (

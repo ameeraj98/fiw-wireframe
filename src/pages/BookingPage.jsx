@@ -15,6 +15,35 @@ const BookingPage = () => {
         </div>
       </section>
 
+      {/* TRAVEL ESTIMATION INFO */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            { 
+              title: "Slot Duration", 
+              value: "60 Mins", 
+              desc: "Includes VR briefing and AR trail hike." 
+            },
+            { 
+              title: "Max Group Size", 
+              value: "15 People", 
+              desc: "To maintain immersion and trail safety." 
+            },
+            { 
+              title: "Arrival Window", 
+              value: "15 Mins", 
+              desc: "Required check-in time before VR departure." 
+            }
+          ].map((stat, i) => (
+            <div key={i} className="text-center p-8 border border-white/5 rounded-3xl bg-base-200/50">
+              <p className="text-xs uppercase tracking-widest opacity-50 mb-2">{stat.title}</p>
+              <p className="text-4xl font-black text-emerald-500 mb-2">{stat.value}</p>
+              <p className="text-sm opacity-60">{stat.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* BOOKING SYSTEM PLACEHOLDER */}
       <section className="max-w-5xl mx-auto px-6 py-24">
         <div className="bg-base-100 rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
@@ -99,34 +128,7 @@ const BookingPage = () => {
         </div>
       </section>
 
-      {/* TRAVEL ESTIMATION INFO */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            { 
-              title: "Slot Duration", 
-              value: "60 Mins", 
-              desc: "Includes VR briefing and AR trail hike." 
-            },
-            { 
-              title: "Max Group Size", 
-              value: "15 People", 
-              desc: "To maintain immersion and trail safety." 
-            },
-            { 
-              title: "Arrival Window", 
-              value: "15 Mins", 
-              desc: "Required check-in time before VR departure." 
-            }
-          ].map((stat, i) => (
-            <div key={i} className="text-center p-8 border border-white/5 rounded-3xl bg-base-200/50">
-              <p className="text-xs uppercase tracking-widest opacity-50 mb-2">{stat.title}</p>
-              <p className="text-4xl font-black text-emerald-500 mb-2">{stat.value}</p>
-              <p className="text-sm opacity-60">{stat.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      
     </div>
   );
 };
