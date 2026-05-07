@@ -222,15 +222,15 @@ const ExperiencePage = () => {
           {[
             { 
               title: "Moa Lookout", 
-              desc: "Witness the return of a giant in a life-sized encounter, where you can interact with and capture photos of this legendary flightless icon." 
+              desc: "Witness the return of a giant in a life-sized encounter, where you can get closer, feed, and observe their nature behaviors." 
             },
             { 
               title: "Haast Eagle Lookout", 
-              desc: "Experience the sheer scale of the world’s largest eagle as its 3-meter wingspan sweeps across the sky for an unforgettable video moment." 
+              desc: "Experience the sheer scale of the world’s largest eagle as its 3-meter wingspan sweeps across the sky for an unforgettable moment." 
             },
             { 
               title: "Kiwi Lookout", 
-              desc: "Get up close with New Zealand's national icon to observe unique feeding behaviors through an interactive and educational lens." 
+              desc: "Get up close with New Zealand's national icon to help it build its nest." 
             },
             { 
               title: "Ancient Forest Immersion Lookout", 
