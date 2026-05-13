@@ -113,8 +113,7 @@ return (
             Future <span className="text-emerald-500">is Wild™</span>
           </h2>
           <p className="opacity-80 text-sm leading-relaxed max-w-xs">
-            A world-first speculative biology attraction in Glenorchy. 
-            Journey through the evolution of the Hillocks via immersive VR and AR.
+            A world-first guided nature walk through one of the most outstanding natural landscapes of New Zealand. A journey through time and into the future with state-of-the-art XR technology.
           </p>
           <div className="flex flex-wrap gap-3 mt-1">
             {socialLinks.map((social) => (
@@ -134,7 +133,7 @@ return (
           <h2 className="footer-title opacity-100 text-emerald-500 uppercase tracking-widest mb-4">Newsletter</h2>
           <form onSubmit={(e) => e.preventDefault()} className="form-control w-full">
             <label className="label pt-0" htmlFor="footer-email">
-              <span className="label-text opacity-70 mb-2">Get the latest evolution updates and rewilding milestones.</span>
+              <span className="label-text opacity-70 mb-2">Stay in touch for updates and recieve news about our environmental and educational activities</span>
             </label>
             <div className="join w-full">
               <input
@@ -237,7 +236,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="stats stats-vertical lg:stats-horizontal shadow w-full bg-base-100 border border-white/5">
             <div className="stat place-items-center">
-              <div className="stat-title text-yellow-600">Global Audience</div>
+              <div className="stat-title text-yellow-600">Global Brand Audience</div>
               <div className="stat-value text-emerald-500">1B+</div>
               <div className="stat-desc">Viewers Worldwide</div>
             </div>
@@ -264,12 +263,10 @@ const Home = () => {
       <div className="space-y-6 text-left order-2 lg:order-1">
         <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter">
           What is <br />
-          <span className="text-emerald-500">The Future is Wild™?</span>
+          <span className="text-emerald-500">The Future is Wild™ @ The Hillocks?</span>
         </h2>
         <p className="text-xl opacity-80 leading-relaxed max-w-xl">
-          Step beyond the boundaries of time. Based on the award-winning documentary series, 
-          this world-first experience brings speculative biology to life in the heart of Glenorchy. 
-          Discover how Earth's ecosystems might evolve 5, 100, and 200 million years into the future.
+          Today, we know the climate is changing and our world is at a turning point. We explore the challenges we face, the history that shaped this land, and why New Zealand’s unique wildlife once stood at the brink of extinction. At The Future is Wild @ The Hillocks, we bring the concepts of evolution and adaptation into a present-day context to help us shape a better future.
         </p>
         
         <div className="pt-6">
@@ -301,10 +298,10 @@ const Home = () => {
   </div>
 </section>
 
-      {/* TESTIMONIALS SECTION */}
+      {/* TESTIMONIALS SECTION 
 <section className="relative bg-gradient-to-b from-base-200/40 to-base-100 py-28">
   <div className="max-w-7xl mx-auto px-6">
-    {/* Section Header */}
+    {/* Section Header 
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter">
         Loved by Our Visitors
@@ -315,7 +312,7 @@ const Home = () => {
       </p>
     </div>
 
-    {/* Testimonials Grid */}
+    {/* Testimonials Grid 
     <div className="grid gap-8 md:grid-cols-3">
       {[
         {
@@ -338,26 +335,26 @@ const Home = () => {
           key={i}
           className="group relative rounded-2xl bg-base-100 border border-white/10 p-8 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-emerald-500/40"
         >
-          {/* Decorative Quote Icon */}
+          {/* Decorative Quote Icon 
           <Quotes
             size={64}
             weight="fill"
             className="absolute top-6 right-6 text-emerald-500/10 group-hover:text-emerald-500/20 transition"
           />
 
-          {/* Star Rating */}
+          {/* Star Rating 
           <div className="flex gap-1 mb-4 text-yellow-500">
             {[...Array(5)].map((_, i) => (
               <Star key={i} size={18} weight="fill" />
             ))}
           </div>
 
-          {/* Testimonial Text */}
+          {/* Testimonial Text 
           <p className="text-lg leading-relaxed italic mb-6 relative z-10">
             "{t.text}"
           </p>
 
-          {/* Author */}
+          {/* Author 
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center">
               <UserCircle
@@ -377,16 +374,17 @@ const Home = () => {
   </div>
 </section>
 
+*/}
+
       {/* MEDIA GALLERY SECTION */}
       <section className="max-w-7xl mx-auto px-6 pb-24 py-28">
   {/* Section Header */}
   <div className="text-center mb-16">
     <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter">
-      Media Gallery
+      Production Sneak Peek
     </h2>
     <p className="mt-4 text-lg text-base-content/70 max-w-2xl mx-auto">
-      Explore stunning visuals from the Hillocks experience — immersive
-      landscapes, AR moments, and unforgettable scenes captured by our visitors.
+      Get an exclusive look at how we are bringing the world-first 'Future is Wild' experience to life. Our production is already underway, featuring on-site development at Glenorchy.
     </p>
   </div>
   

@@ -6,22 +6,22 @@ const ExperiencePage = () => {
     {
       step: "01",
       title: "Arrival at the Visitor Center",
-      desc: "Our purpose-built visitor centre features ticket counter and check-in, merchandising store, 100 sqm rotating exhibition space, and etc."
+      desc: "Located at the Dart Bridge on Gelnorchy-Routeburn Road, we welcome you at our Visitor Center with plenty of parking available."
     },
     {
       step: "02",
       title: "Guided VR Experience",
-      desc: "Groups of up to 15 people depart with their dedicated guide for a journey through time."
+      desc: "Groups of up to 15 people depart with their dedicated guide for a walk through the amazing landscape of The Hillocks and mindblowing virtual reality experiences."
     },
     {
       step: "03",
-      title: "AR Self Guided Return",
-      desc: "After Hide 4, visitors proceed to the AR Experience, encountering 4-5 AR stations."
+      title: "Self-Guided Nature Walk and AR Safari",
+      desc: "The journey continues at your own pace. Use your mobile device to launch the Future is Wild™ AR Safari app and discover hidden wonders along the trail."
     },
     {
       step: "04",
       title: "End of Journey",
-      desc: "Return back to the Visitor Center after completing the journeys."
+      desc: "Return back to the Visitor Center to conclude your tour and don't forget to collect your rewards if you've mastered the AR Safari."
     }
   ];
 
@@ -34,7 +34,7 @@ const ExperiencePage = () => {
             The Experience
           </h1>
           <p className="mt-4 text-xl opacity-70 max-w-2xl">
-            A 1.5km looped route through the Southern Hillocks, featuring four discrete viewing hides and an elevated AR platform.
+            A guided tour through The Hillocks, a landmark natural formation, never been accessible to the public. Integrated virtual reality and augmented reality experiences will make your visit an unforgettable adventure.
           </p>
         </div>
       </section>
@@ -47,22 +47,22 @@ const ExperiencePage = () => {
   {[
     { 
       title: "Duration", 
-      desc: "Approximately 90 minutes for the full loop.", 
+      desc: "A 75-minute guided tour, followed by unlimited self-guided AR exploration.", 
       icon: "M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" 
     },
     { 
       title: "Accessibility", 
-      desc: "Gravel paths; suitable for all-terrain equipment.", 
+      desc: "Our attraction is fully inclusive and wheelchair-accessible.", 
       icon: "M9 6.75V15m6-10.5v.112c0 .071 0 .141-.021.21L13.65 11.543a.375.375 0 01-.7a0L11.622 4.821a.75.75 0 00-.02-.21V4.5M9 9h.008v.008H9V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" 
     },
     { 
       title: "Clothing", 
-      desc: "Outdoor footwear and wind-proof layers recommended.", 
+      desc: "Outdoor footwear and weather-proof layers are highly recommended.", 
       icon: "M8.25 2.25h7.5a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-7.5a2.25 2.25 0 012.25-2.25zM12 9.75v3m-3-3l3-3 3 3" 
     },
     { 
       title: "Age", 
-      desc: "Recommended for ages 7+. Adult supervision required.", 
+      desc: "Suitable for ages from 8 to 88. Adult supervision required.", 
       icon: "M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" 
     }
   ].map((item, i) => (
@@ -140,7 +140,7 @@ const ExperiencePage = () => {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">VR Experience</h2>
           <p className="text-xl opacity-70 leading-relaxed">
-            Immerse yourself in a 360-degree speculative evolution experience from the safety of our VR Hides.
+            Step into our custom-built VR Hides for a 360-degree plunge into speculative evolution and the shifting history of our planet.
           </p>
         </div>
 
@@ -148,20 +148,20 @@ const ExperiencePage = () => {
         <div className="space-y-6">
           {[
             { 
-              title: "VR Hide 1 - Ancient Encounters", 
-              desc: "Journey back to the beginning of the Hillocks' evolutionary path. Witness the early ancestors of the creatures that now roam the future landscape."
+              title: "VR Hide 1 - Wild Encounters", 
+              desc: "Travel back to a New Zealand untouched by humans. Stand in the presence of the majestic, extinct Moa as it roams its ancestral home."
             },
               { 
               title: "VR Hide 2 - Forces of Nature", 
-              desc: "Experience the dramatic environmental shifts that shaped the world. From volcanic eruptions to massive floods, see how life adapted to survive." 
+              desc: "Witness the raw power of the Earth. Experience the *catastrophic* geological events that carved and shaped the unique landscape of The Hillocks." 
             },
             { 
-              title: "VR Hide 3 - Ice Age Wonders", 
-              desc: "Step into a frozen future. Explore the unique biology of creatures that thrive in the extreme cold of the coming ice ages." 
+              title: "VR Hide 3 - The Future in Our Hands", 
+              desc: "A sobering yet inspiring look at human impact. Face the challenges of extreme weather and discover the vital steps we must take for our collective survival."
             },
             { 
-              title: "VR Hide 4 - Future Visions", 
-              desc: "Peer into the ultimate horizon where nature and human legacy collide. Explore a world of extreme resilience, witnessing how life persists and flourishes through the most radical climate shifts of the next 200 million years." 
+              title: "VR Hide 4 - Stars that Guide Us", 
+              desc: "From the depths of space to the protected dark skies of Glenorchy, rediscover the celestial navigators that guided Polynesian voyagers to these shores." 
             }
           ].map((hide, i) => (
             <div key={i} className="card bg-base-100 border border-white/10 shadow-lg hover:border-emerald-500/50 transition-colors">
@@ -211,9 +211,9 @@ const ExperiencePage = () => {
       <div className="space-y-10">
         {/* Section Title & Description moved here */}
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">AR Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">AR Safari</h2>
           <p className="text-xl opacity-70 leading-relaxed">
-            Use your mobile/tablet device to bring extinct giants to life in the palm of your hand upon completion of VR hides.
+            After the VR tour, use your own mobile device to bring extinct giants into the palm of your hand.
           </p>
         </div>
 
@@ -222,19 +222,19 @@ const ExperiencePage = () => {
           {[
             { 
               title: "Moa Lookout", 
-              desc: "Witness the return of a giant in a life-sized encounter, where you can get closer, feed, and observe their nature behaviors." 
+              desc: "Experience a life-sized encounter with a giant. Observe, feed, and interact with the Moa in its natural habitat." 
             },
             { 
               title: "Haast Eagle Lookout", 
-              desc: "Experience the sheer scale of the world’s largest eagle as its 3-meter wingspan sweeps across the sky for an unforgettable moment." 
+              desc: "Look to the skies. Witness the world’s largest eagle as its massive 3-meter wingspan shadows the landscape above you." 
             },
             { 
               title: "Kiwi Lookout", 
-              desc: "Get up close with New Zealand's national icon to help it build its nest." 
+              desc: "Get up close with New Zealand’s national icon and lend a hand as it carefully constructs its nest." 
             },
             { 
               title: "Ancient Forest Immersion Lookout", 
-              desc: "Step into a pre-human sanctuary to discover a hidden world of extinct and rare species that once ruled the New Zealand wilderness." 
+              desc: "Step into a pre-human sanctuary. Discover a hidden world of rare and extinct species that once ruled the wilderness." 
             },
                         { 
               title: "Ice Age Valley Lookout", 

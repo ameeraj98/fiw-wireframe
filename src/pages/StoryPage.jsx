@@ -27,7 +27,7 @@ const StoryPage = () => {
           <div>
             <h2 className="text-3xl font-bold mb-6 italic text-emerald-500">Connection to Origins</h2>
             <p className="text-xl opacity-80 leading-relaxed">
-              "The Future is Wild" began as a groundbreaking documentary series that captured the world's imagination by applying hard science to the distant future. We carry that legacy forward, transforming speculative biology from a passive screen experience into a physical journey through the Hillocks.
+              "The Future is Wild" began as a groundbreaking documentary series that captured the world's imagination by applying hard science to the distant future. We carry that legacy forward, taking the geniune concept of evolution and adaptaion into a more contemporary context. Focusing on the dramatic effects that climate change might bring to the human kind we go back from past, present to all the way to the future.
             </p>
           </div>
           <div className="bg-emerald-500/5 border border-emerald-500/20 p-8 rounded-3xl">
@@ -46,14 +46,14 @@ const StoryPage = () => {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">Climate-focused Contemporary Adaptation</h2>
           <p className="text-xl opacity-80 leading-relaxed">
-            Our adaptation isn't just a fantasy—it's a reflection of our changing world. By integrating contemporary climate data, we show how the Hillocks might transform under various global warming scenarios. This isn't just about what *might* happen; it's about understanding the resilience of life in the face of environmental shifts.
+            Our adaptation isn't just a fantasy—it's a reflection of our changing world. Going back in time, and presenting what New Zealand once was, the impact the humans had in the last 800 years and what we can do to continue our path with a positive and hopeful outlook into the future. By integrating contemporary climate data, we show how the Hillocks might transform under various global warming scenarios. This isn't just about what *might* happen; it's about understanding the resilience of life in the face of environmental shifts.
           </p>
         </div>
       </section>
 
       {/* SCIENTIFIC ADVISORS */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 text-center">   Scientific Advisors</h2>
+        <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 text-center"> Advisory Board</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {advisors.map((advisor, i) => (
             <div key={i} className="p-8 bg-base-100 rounded-2xl border border-white/5 text-center">
@@ -82,7 +82,7 @@ const StoryPage = () => {
       {/* ROW 1: Crafting Reality (Text Left, Image Right) */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h3 className="text-3xl font-bold text-emerald-500 italic">Crafting Reality</h3>
+          <h3 className="text-3xl font-bold text-emerald-500 italic">Onsite Development</h3>
           <p className="text-xl opacity-80 leading-relaxed">
             To create our AR/VR experiences, we used LiDAR scanning to map the Glenorchy Hillocks down to the millimeter. This allows our digital creatures to "step" over real rocks and navigate the actual terrain of the trail with absolute precision.
           </p>
@@ -106,10 +106,27 @@ const StoryPage = () => {
           />
         </div>
         <div className="space-y-6 order-1 lg:order-2">
-          <h3 className="text-3xl font-bold text-emerald-500 italic">The "Goat-Mice" Legend</h3>
+          <h3 className="text-3xl font-bold text-emerald-500 italic">VR Productions</h3>
           <p className="text-xl opacity-80 leading-relaxed">
-            One of our most popular BTS stories involves the 'Goat-mice'. In an early 5-million-year-future simulation, our AI procedural animation caused small rodent models to start climbing vertical cliffs like mountain goats. Instead of "fixing" it, we realized the adaptation was plausible, and the "Shrew-Goat" was born.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
+        </div>
+      </div>
+
+            {/* ROW 3: AR Production (Text Left, Image Right) */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="space-y-6">
+          <h3 className="text-3xl font-bold text-emerald-500 italic">AR Production</h3>
+          <p className="text-xl opacity-80 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div className="relative aspect-video bg-base-300 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+          <img 
+            src="https://blocks.astratic.com/img/general-video.png" 
+            alt="LiDAR Scanning Process" 
+            className="w-full h-full object-cover opacity-80"
+          />
         </div>
       </div>
     </div>
