@@ -6,7 +6,7 @@ import { Star, Quotes, UserCircle } from "@phosphor-icons/react";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import PanoramaViewer from "./components/PanoramaViewer";
 import ExperiencePage from './pages/ExperiencePage';
-import StoryPage from './pages/StoryPage';
+import LegacyPage from './pages/LegacyPage';
 import PlanPage from './pages/PlanPage';
 import BookingPage from './pages/BookingPage';
 import EducationPage from './pages/EducationPage';
@@ -451,7 +451,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<ExperiencePage />} />
-            <Route path="/story" element={<StoryPage />} />
+            <Route path="/legacy" element={<LegacyPage />} />
             <Route path="/plan" element={<PlanPage />} />
             <Route path="/booking" element={<BookingPage />}/>
             <Route path="/education" element={<EducationPage />}/>

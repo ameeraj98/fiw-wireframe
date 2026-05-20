@@ -1,171 +1,434 @@
 import React from 'react';
 
 const PlanPage = () => {
-  const ticketTypes = [
-    { type: "Adult", price: "$45", desc: "Full access to VR Hides & AR Trail" },
-    { type: "Child", price: "$25", desc: "Ages 7-15. Must be with an adult." },
-    { type: "Family", price: "$120", desc: "2 Adults + 2 Children" },
-    { type: "Concession", price: "$35", desc: "Students & Seniors (ID required)" }
+  const accommodations = [
+    "The Headwaters Eco Lodge",
+    "Kinloch Wilderness Reatreat",
+    "The Great Glenorchy Alpine BaseCamp",
+    "Blanket Bay Luxury Lodge",
+  ];
+
+  const activities = [
+    "Dart River Jet Boat Experiences",
+    "Routeburn Track Access",
+    "Wilderness Valley Exploration",
+    "Mt Aspiring National Park Trails",
   ];
 
   return (
-    <div className="bg-base-300 min-h-screen">
-      {/* HEADER SECTION */}
-      <section className="py-20 bg-base-200 border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
-            Plan Your Visit
-          </h1>
-          <p className="mt-4 text-xl opacity-70 max-w-2xl">
-            Everything you need to know before stepping into the future of the Glenorchy Hillocks.
-          </p>
+    <div className="min-h-screen bg-base-300 text-white antialiased">
+
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-white/5">
+        <div className="absolute inset-0">
+          <img
+            src="https://fiw.co.nz/images/about/Location-2.avif"
+            alt="The Hillocks"
+            className="w-full h-full object-cover opacity-30"
+          />
         </div>
-      </section>
 
+        <div className="relative max-w-7xl mx-auto px-6 py-28 md:py-36">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tight leading-none">
+              Plan Your Visit
+            </h1>
 
+                        <p className="text-emerald-500 uppercase tracking-[0.2em] text-sm font-semibold mb-5 mt-5">
+              Opening September 1, 2026
+            </p>
 
-      {/* LOCATION & HOURS SECTION */}
-      <section className="bg-base-200 py-20 border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Map Placeholder */}
-            <div className="relative aspect-video bg-base-100 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-              <img 
-                src="https://www.unitedwayqc.org/wp-content/uploads/2022/12/placeholder-1024x683.png" 
-                alt="Glenorchy Location" 
-                className="w-full h-full object-cover opacity-60"
-              />
-            </div>
-
-            {/* Hours & Details */}
-            <div className="space-y-8">
-              <h2 className="text-3xl font-bold italic text-emerald-500">How to find us</h2>
-              <p className="text-lg opacity-80 leading-relaxed">
-                We are located at the edge of the Glenorchy Hillocks, just a 45-minute scenic drive from Queenstown. Look for the "Future is Wild" banners at the Basecamp entrance.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex justify-between border-b border-white/5 pb-2">
-                  <span className="font-bold">Monday — Friday</span>
-                  <span className="opacity-70">10:00 AM — 4:00 PM</span>
-                </div>
-                <div className="flex justify-between border-b border-white/5 pb-2">
-                  <span className="font-bold">Saturday — Sunday</span>
-                  <span className="opacity-70">10:00 AM — 4:00 PM</span>
-                </div>
-
-              </div>
-            </div>
+            <p className="mt-8 text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl">
+              Prepare for your visit to The Future is Wild™ @ The Hillocks,
+              beside Te Awa Whakatipu (Dart River), surrounded by native
+              forests, waterways, and internationally recognised alpine scenery.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* PARKING & ARRIVAL SECTION */}
-<section className="py-20 bg-base-300">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      <div className="order-2 lg:order-1 space-y-6">
-        <h2 className="text-3xl font-bold italic text-emerald-500">Parking & Arrival</h2>
-        <p className="text-lg opacity-80 leading-relaxed">
-          Free parking is available for all visitors at the Basecamp Entrance. We provide dedicated spaces for campervans and buses, as well as EV charging stations for those traveling sustainably.
+      {/* COMING SOON NOTICE */}
+<section className="bg-base-200 border-b border-white/5">
+  <div className="max-w-5xl mx-auto px-6 py-14">
+
+    <div className="relative overflow-hidden rounded-3xl border border-emerald-500/15 bg-base-300 px-8 py-10 md:px-10 md:py-12">
+
+      {/* Accent Line */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent" />
+
+      <div className="max-w-3xl">
+
+        <p className="text-emerald-500 uppercase tracking-[0.2em] text-sm font-semibold">
+          Coming Soon
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-4 bg-base-100 border border-white/5 rounded-2xl">
-            <h4 className="font-bold text-white mb-1">Parking Type 1</h4>
-            <p className="text-sm opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-          <div className="p-4 bg-base-100 border border-white/5 rounded-2xl">
-            <h4 className="font-bold text-white mb-1">Parking Type 2</h4>
-            <p className="text-sm opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </div>
-      </div>
-      <div className="order-1 lg:order-2 relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-        <img 
-          src="https://www.unitedwayqc.org/wp-content/uploads/2022/12/placeholder-1024x683.png" 
-          alt="Parking Area" 
-          className="w-full h-full object-cover opacity-80"
-        />
+
+        <h2 className="mt-4 text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
+          Ticket Information Will Be Announced Closer To Launch
+        </h2>
+
+        <p className="mt-6 text-base md:text-lg text-white/70 leading-relaxed">
+          The Future is Wild™ @ The Hillocks is scheduled to open on September 1, 2026. Final ticket structures will be announced closer to launch as part of our competitive pricing strategy. Please check back nearer to opening for booking information.</p>
+
       </div>
     </div>
+  </div>
+</section>
+
+      {/* THE HILLOCKS LOCATION */}
+<section className="py-24 bg-base-300 border-b border-white/5">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* SECTION INTRO */}
+    <div className="max-w-4xl">
+
+
+      <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight text-white">
+        The Hillocks Location
+      </h2>
+
+      <div className="mt-8 space-y-6 text-lg text-white/70 leading-relaxed">
+        <p>
+          The Hillocks, beside Te Awa Whakatipu (Dart River) is a gateway to
+          some of New Zealand’s greatest walks.
+        </p>
+
+        <p>
+          Queenstown, a premier tourism destination is only a one hour away.
+        </p>
+
+        <p>
+          The Hillocks is ideally located for those seeking an immersive nature
+          experience among native forests, waterways and scenery made famous in
+          many blockbuster movies, including “Lord of the Rings”, “Vertical
+          Limits” and “Chronicles of Narnia”.
+        </p>
+      </div>
+    </div>
+
+    {/* IMAGE GALLERY */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-14">
+
+      <div className="overflow-hidden rounded-3xl border border-white/10">
+        <img
+          src="https://static.wixstatic.com/media/5d5f9e_0fac4a47c97249ff9731517e4e2525c9~mv2.jpg/v1/fill/w_600,h_326,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Location-2.jpg"
+          alt="The Hillocks Landscape"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="overflow-hidden rounded-3xl border border-white/10">
+        <img
+          src="https://static.wixstatic.com/media/5d5f9e_5faff4ec72be40c89ff29b1efcdb5d71~mv2.jpg/v1/fill/w_600,h_326,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Location-1.jpg"
+          alt="The Hillocks Scenic Environment"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+    </div>
+
+    {/* MAP + ADDRESS */}
+    <div className="mt-16">
+
+      <div className="overflow-hidden rounded-3xl border border-white/10 aspect-video">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90635.9609471386!2d168.19559876250003!3d-44.7731846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d5bcaafc62f1f9%3A0xdd45761afd84f86!2sIsengard%20Lookout!5e0!3m2!1sen!2smy!4v1779279412198!5m2!1sen!2smy"
+          className="w-full h-full border-0"
+          loading="lazy"
+          title="The Hillocks Location Map"
+        />
+      </div>
+
+      {/* ADDRESS */}
+      <div className="mt-8 max-w-xl">
+        <p className="text-emerald-500 uppercase tracking-[0.2em] text-sm font-semibold mb-4">
+          The Hillocks Address
+        </p>
+
+        <div className="space-y-2 text-white/75 text-lg leading-relaxed">
+          <p>"The Future is Wild™ @ The Hillocks"</p>
+
+          <p>Glenorchy-Routeburn Road (at the Dart Bridge)</p>
+
+          <p>Glenorchy, 9372</p>
+
+          <p>New Zealand.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+      {/* OPERATING HOURS + PARKING */}
+<section className="py-24 bg-base-200 border-b border-white/5">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      {/* OPERATING HOURS */}
+      <div className="rounded-3xl border border-white/10 bg-base-300 p-8 md:p-10">
+
+
+        <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white leading-tight">
+          Operating Hours
+        </h2>
+
+        <p className="mt-5 text-white/70 text-lg leading-relaxed max-w-xl">
+          Visitors are encouraged to allow time to fully experience the
+          surrounding landscape, native environment, and arrival journey at
+          The Hillocks.
+        </p>
+
+        <div className="mt-10 space-y-5">
+
+          <div className="flex items-center justify-between border-b border-white/5 pb-4">
+            <span className="text-white font-medium">
+              Monday - Friday
+            </span>
+
+            <span className="text-white/70">
+              10:00 AM to 4:00 PM
+            </span>
+          </div>
+
+          <div className="flex items-center justify-between">
+            <span className="text-white font-medium">
+              Saturday - Sunday
+            </span>
+
+            <span className="text-white/70">
+              10:00 AM to 5:00 PM
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      {/* PARKING & ARRIVAL */}
+      <div className="rounded-3xl border border-white/10 bg-base-300 p-8 md:p-10">
+
+
+        <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white leading-tight">
+          Parking & Arrival
+        </h2>
+
+        <div className="mt-6 space-y-6 text-lg text-white/70 leading-relaxed">
+
+          <p>
+            Visitors will arrive at the designated parking area before taking
+            a brief walk to the visitor center.
+          </p>
+
+          <p>
+            The arrival experience offers guests an opportunity to begin
+            immersing themselves in the surrounding natural environment before
+            entering the main visitor facilities.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* BROCHURE CTA */}
+<section className="relative overflow-hidden py-32">
+
+  {/* BACKGROUND IMAGE */}
+  <div className="absolute inset-0">
+    <img
+      src="https://fiw.co.nz/images/about/Location-2.avif"
+      alt="The Hillocks Landscape"
+      className="w-full h-full object-cover opacity-20"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-b from-base-300 via-base-300/95 to-base-300" />
+  </div>
+
+  {/* CONTENT */}
+  <div className="relative max-w-4xl mx-auto px-6 text-center">
+
+
+
+    <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-tight text-white">
+      Interested To Know More?
+    </h2>
+
+    <div className="mt-8 max-w-2xl mx-auto space-y-6 text-lg text-white/70 leading-relaxed">
+
+      <p>
+        Discover more about The Future is Wild™ @ The Hillocks and begin
+        planning your visit to the Glenorchy and Dart River region.
+      </p>
+
+      <p>
+        Download our brochure for additional visitor information and destination
+        highlights.
+      </p>
+
+    </div>
+
+    {/* CTA BUTTON */}
+    <div className="mt-12">
+
+      <button className="btn btn-lg rounded-2xl px-10 bg-emerald-500 border-0 text-black hover:bg-emerald-400 transition-all duration-300">
+
+        Download Our Brochure
+
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+      {/* STAY NEARBY */}
+<section className="py-24 bg-base-300 border-b border-white/5">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* INTRO */}
+    <div className="max-w-4xl">
+
+
+
+      <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight text-white">
+        Stay Nearby
+      </h2>
+
+      <div className="mt-8 space-y-6 text-lg text-white/70 leading-relaxed">
+        <p>
+          Visitors to The Hillocks can continue exploring the surrounding
+          Glenorchy and Dart River region through nearby accommodation options
+          immersed within the natural landscape.
+        </p>
+
+        <p>
+          Local accommodation partners offer opportunities to experience the
+          region beyond a single day visit, with access to wilderness scenery,
+          walking tracks, and the wider Queenstown region.
+        </p>
+      </div>
+
+    </div>
+
+    {/* ACCOMMODATION GRID */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-14">
+
+      {[
+        "The Headwaters Eco Lodge",
+        "Kinloch Wilderness Reatreat",
+        "The Great Glenorchy Alpine BaseCamp",
+        "Blanket Bay Luxury Lodge",
+      ].map((place, i) => (
+        <div
+          key={i}
+          className="group rounded-3xl border border-white/10 bg-base-200 p-8 hover:border-emerald-500/20 transition-all duration-300"
+        >
+
+          <div className="flex items-start justify-between gap-6">
+
+            <div>
+              <h3 className="text-2xl font-semibold text-white leading-snug">
+                {place}
+              </h3>
+
+              <p className="mt-4 text-white/60 leading-relaxed">
+                Accommodation partner within the Glenorchy and Dart River
+                region.
+              </p>
+            </div>
+
+            <div className="w-3 h-3 rounded-full bg-emerald-500/70 mt-3 shrink-0" />
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
+
+      {/* DISCOVER NEARBY ACTIVITIES */}
+<section className="py-24 bg-base-200 border-b border-white/5">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      {/* CONTENT */}
+      <div>
+
+
+
+        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight text-white">
+          Explore The Glenorchy & Dart River Region
+        </h2>
+
+        <div className="mt-8 space-y-6 text-lg text-white/70 leading-relaxed">
+
+          <p>
+            The Glenorchy and Dart River region is internationally recognised
+            for its dramatic alpine scenery, wilderness access, and outdoor
+            exploration opportunities.
+          </p>
+
+          <p>
+            Visitors to The Hillocks can extend their experience through nearby
+            guided adventures, river expeditions, and internationally celebrated
+            walking tracks.
+          </p>
+
+                  <p className="text-emerald-500 uppercase tracking-[0.2em] text-sm font-semibold mb-4">
+          Discover Nearby Activities
+        </p>
+
+        </div>
+
+        {/* ACTIVITIES */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12">
+
+          {[
+            "Dart River Jet Boat Experiences",
+            "Routeburn Track Access",
+            "Wilderness Valley Exploration",
+            "Mt Aspiring National Park Trails",
+          ].map((activity, i) => (
+            <div
+              key={i}
+              className="rounded-2xl border border-white/10 bg-base-300 px-6 py-5 hover:border-emerald-500/20 transition-all duration-300"
+            >
+              <p className="text-white/80 font-medium leading-relaxed">
+                {activity}
+              </p>
+            </div>
+          ))}
+
+        </div>
+      </div>
+
+      {/* IMAGE */}
+      <div className="relative overflow-hidden rounded-3xl border border-white/10 aspect-[4/5] lg:aspect-[4/4.5]">
+
+        <img
+          src="https://www.unitedwayqc.org/wp-content/uploads/2022/12/placeholder-1024x683.png"
+          alt="Glenorchy and Dart River Region"
+          className="w-full h-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+
+      </div>
+
+    </div>
+
   </div>
 </section>
 
       
-
-      {/* FINAL CTA */}
-      <section className="py-24 text-center max-w-3xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6">
-          Ready to explore?
-        </h2>
-        <p className="text-xl opacity-70 mb-10">
-          Bookings are highly recommended as AR headsets are limited for each time slot.
-        </p>
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <button className="btn btn-lg btn-emerald-500 hover:btn-primary-400 text-neutral-900 border-none px-12">
-            Book now
-          </button>
-          <button className="btn btn-lg btn-outline text-white px-12">
-            Contact us
-          </button>
-        </div>
-      </section>
-{/* ACCOMMODATIONS SECTION */}
-<section className="py-20 bg-base-200 border-y border-white/5">
-  <div className="max-w-7xl mx-auto px-6">
-    <h2 className="text-3xl md:text-4xl font-black uppercase mb-12 text-center">
-      Stay Nearby
-    </h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {[
-        { name: "Accommodation Name 1", type: "Accommodation Type 1", distance: "x mins away" },
-        { name: "Accommodation Name 2", type: "Accommodation Type 2", distance: "x mins away" },
-        { name: "Accommodation Name 3", type: "Accommodation Type 3", distance: "x mins away" }
-      ].map((place, i) => (
-        <div key={i} className="card bg-base-300 border border-white/5 hover:border-emerald-500/50 transition-all p-8">
-          <h3 className="text-xl font-bold text-white">{place.name}</h3>
-          <p className="text-emerald-500 text-sm font-bold uppercase mt-1">{place.type}</p>
-          <div className="divider opacity-5"></div>
-          <p className="text-sm opacity-60 flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-            </svg>
-            {place.distance}
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-{/* LOCAL REGION SECTION */}
-<section className="py-20 bg-base-300">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      <div className="relative aspect-square lg:aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-        <img 
-          src="https://blocks.astratic.com/img/general-video.png" 
-          alt="Glenorchy Region" 
-          className="w-full h-full object-cover opacity-80"
-        />
-      </div>
-      <div className="space-y-6">
-        <h2 className="text-3xl font-bold italic text-emerald-500">Discover Glenorchy</h2>
-        <p className="text-lg opacity-80 leading-relaxed">
-          Known as the "Gateway to Paradise," Glenorchy is a hub for outdoor enthusiasts. Beyond the Hillocks, explore the Dart River by jet boat, hike the world-famous Routeburn Track, or visit filming locations from iconic cinematic trilogies.
-        </p>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm opacity-70">
-          <li>• Activity 1</li>
-          <li>• Activity 2</li>
-          <li>• Activity 3</li>
-          <li>• Activity 4</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 
     </div>
   );

@@ -5,7 +5,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 const ExplorePage = () => {
   const theJourney = [
     { name: "The Experience", path: "/experience", desc: "Step into the future of the Hillocks." },
-    { name: "The Story", path: "/story", desc: "The science and speculation behind the project." },
+    { name: "A Global Legacy", path: "/legacy", desc: "Connection to the origins." },
     { name: "Plan Your Visit", path: "/plan", desc: "Everything you need to know before you arrive." },
     { name: "Booking", path: "/booking", desc: "Secure your passage. Reservations are now open for the 2026 season." },
   ];
