@@ -18,61 +18,21 @@ const PlanPage = () => {
   return (
     <div className="min-h-screen bg-base-300 text-white antialiased">
 
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0">
-          <img
-            src="https://fiw.co.nz/images/about/Location-2.avif"
-            alt="The Hillocks"
-            className="w-full h-full object-cover opacity-30"
-          />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-6 py-28 md:py-36">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tight leading-none">
-              Plan Your Visit
-            </h1>
-
-                        <p className="text-emerald-500 uppercase tracking-[0.2em] text-sm font-semibold mb-5 mt-5">
-              Opening September 1, 2026
-            </p>
-
-            <p className="mt-8 text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl">
-              Prepare for your visit to The Future is Wild™ @ The Hillocks,
-              beside Te Awa Whakatipu (Dart River), surrounded by native
-              forests, waterways, and internationally recognised alpine scenery.
-            </p>
-          </div>
+            {/* HEADER SECTION */}
+      <section className="py-16 bg-base-200 border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
+            Plan Your Visit
+          </h1>
+          <p className="mt-4 text-xl opacity-70 max-w-2xl">
+            Prepare for your visit to The Future is Wild™ @ The Hillocks, beside Te Awa Whakatipu (Dart River), surrounded by native forests, waterways, and internationally recognised alpine scenery.
+          </p>
         </div>
       </section>
 
-      {/* COMING SOON NOTICE */}
-<section className="bg-base-200 border-b border-white/5">
-  <div className="max-w-5xl mx-auto px-6 py-14">
 
-    <div className="relative overflow-hidden rounded-3xl border border-emerald-500/15 bg-base-300 px-8 py-10 md:px-10 md:py-12">
 
-      {/* Accent Line */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent" />
-
-      <div className="max-w-3xl">
-
-        <p className="text-emerald-500 uppercase tracking-[0.2em] text-sm font-semibold">
-          Coming Soon
-        </p>
-
-        <h2 className="mt-4 text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
-          Ticket Information Will Be Announced Closer To Launch
-        </h2>
-
-        <p className="mt-6 text-base md:text-lg text-white/70 leading-relaxed">
-          The Future is Wild™ @ The Hillocks is scheduled to open on September 1, 2026. Final ticket structures will be announced closer to launch as part of our competitive pricing strategy. Please check back nearer to opening for booking information.</p>
-
-      </div>
-    </div>
-  </div>
-</section>
+      
 
       {/* THE HILLOCKS LOCATION */}
 <section className="py-24 bg-base-300 border-b border-white/5">
@@ -82,9 +42,7 @@ const PlanPage = () => {
     <div className="max-w-4xl">
 
 
-      <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight text-white">
-        The Hillocks Location
-      </h2>
+<h2 className="text-3xl md:text-4xl font-black uppercase mb-8">Hillocks Location</h2>
 
       <div className="mt-8 space-y-6 text-lg text-white/70 leading-relaxed">
         <p>
@@ -234,57 +192,6 @@ const PlanPage = () => {
   </div>
 </section>
 
-{/* BROCHURE CTA */}
-<section className="relative overflow-hidden py-32">
-
-  {/* BACKGROUND IMAGE */}
-  <div className="absolute inset-0">
-    <img
-      src="https://fiw.co.nz/images/about/Location-2.avif"
-      alt="The Hillocks Landscape"
-      className="w-full h-full object-cover opacity-20"
-    />
-
-    <div className="absolute inset-0 bg-gradient-to-b from-base-300 via-base-300/95 to-base-300" />
-  </div>
-
-  {/* CONTENT */}
-  <div className="relative max-w-4xl mx-auto px-6 text-center">
-
-
-
-    <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-tight text-white">
-      Interested To Know More?
-    </h2>
-
-    <div className="mt-8 max-w-2xl mx-auto space-y-6 text-lg text-white/70 leading-relaxed">
-
-      <p>
-        Discover more about The Future is Wild™ @ The Hillocks and begin
-        planning your visit to the Glenorchy and Dart River region.
-      </p>
-
-      <p>
-        Download our brochure for additional visitor information and destination
-        highlights.
-      </p>
-
-    </div>
-
-    {/* CTA BUTTON */}
-    <div className="mt-12">
-
-      <button className="btn btn-lg rounded-2xl px-10 bg-emerald-500 border-0 text-black hover:bg-emerald-400 transition-all duration-300">
-
-        Download Our Brochure
-
-      </button>
-
-    </div>
-
-  </div>
-</section>
-
       {/* STAY NEARBY */}
 <section className="py-24 bg-base-300 border-b border-white/5">
   <div className="max-w-7xl mx-auto px-6">
@@ -294,9 +201,7 @@ const PlanPage = () => {
 
 
 
-      <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight text-white">
-        Stay Nearby
-      </h2>
+<h2 className="text-3xl md:text-4xl font-black uppercase mb-8">Stay Nearby</h2>
 
       <div className="mt-8 space-y-6 text-lg text-white/70 leading-relaxed">
         <p>
@@ -364,9 +269,7 @@ const PlanPage = () => {
 
 
 
-        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight text-white">
-          Explore The Glenorchy & Dart River Region
-        </h2>
+<h2 className="text-3xl md:text-4xl font-black uppercase mb-8">Explore The Glenorchy & Dart River Region</h2>
 
         <div className="mt-8 space-y-6 text-lg text-white/70 leading-relaxed">
 
