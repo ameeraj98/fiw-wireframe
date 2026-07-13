@@ -2,9 +2,9 @@ import React from 'react';
 
 const EducationPage = () => {
   const curriculumPoints = [
-    { level: "Levels 2–3", focus: "Biological Evolution", desc: "Explore how living things are suited to their particular habitat and how they respond to environmental changes." },
-    { level: "Levels 4–5", focus: "Speculative Adaptation", desc: "Analyze survival of the fittest through a futuristic lens, using climate data to predict evolutionary paths." },
-    { level: "Technology", focus: "Digital Modeling", desc: "Understanding how VR and AR act as scientific tools to visualize complex biological theories." }
+    { level: "Levels 2–3", focus: "Point 1", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " },
+    { level: "Levels 4–5", focus: "Point 2", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " },
+    { level: "Technology", focus: "Point 3", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " }
   ];
 
   return (
@@ -96,21 +96,55 @@ const EducationPage = () => {
         </div>
       </section>
 
-      {/* EDUCATIONAL TRUST SECTION */}
-      <section className="py-24 bg-emerald-950/30">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="w-20 h-20 bg-emerald-500 rounded-full mx-auto mb-8 flex items-center justify-center shadow-[0_0_30px_rgba(16,185,129,0.3)]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-10 h-10 text-black">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-            </svg>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">Connection to Educational Trust</h2>
-          <p className="text-xl opacity-80 leading-relaxed mb-10">
-            We believe in accessibility. That’s why **3% of our net profit** is donated to the <span className="text-emerald-500 font-bold underline decoration-emerald-500/30">Future is Wild Educational Trust</span>, funding for xxx
-          </p>
+{/* EDUCATIONAL TRUST SECTION */}
+<section className="py-24 bg-emerald-950/30">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <div className="w-20 h-20 bg-emerald-500 rounded-full mx-auto mb-8 flex items-center justify-center shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="currentColor"
+        className="w-10 h-10 text-black"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+        />
+      </svg>
+    </div>
 
-        </div>
-      </section>
+    <div className="mb-8">
+      <span className="text-emerald-500 text-5xl md:text-6xl font-black tracking-tighter">
+        3%
+      </span>
+      <p className="mt-2 text-sm font-bold uppercase tracking-[0.25em] opacity-70">
+        Of Net Profit · Educational Trust
+      </p>
+    </div>
+
+    <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">
+      Education Since 2002.
+      <br />
+      <span className="text-emerald-500">
+        Now in Its Next Generation.
+      </span>
+    </h2>
+
+    <p className="text-xl opacity-80 leading-relaxed mb-10">
+      The Future is Wild™ has been driving environmental education
+      programmes since 2002 — across every school level and across every
+      continent, with established programmes in the US, throughout Europe,
+      and into Asia.
+    </p>
+
+    <p className="text-sm md:text-base font-bold uppercase tracking-widest text-emerald-500">
+      ® Over two decades of education. A new generation of impact.
+    </p>
+  </div>
+</section>
 
       {/* VIRTUAL FIELD TRIPS (FUTURE) */}
       <section className="py-32 bg-base-300">
