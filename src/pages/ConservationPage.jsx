@@ -102,9 +102,9 @@ const ConservationPage = () => {
           </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { label: "Trees Planted", value: "xxx", sub: "Native species established" },
-            { label: "CO2 Offset", value: "xxx", sub: "Calculated annual sequestration" },
-            { label: "Hectares Restored", value: "xxx Ha", sub: "Dart Valley buffer zone" }
+            { label: "Trees Planted", value: "105,000", sub: "Native species established" },
+            { label: "CO2 Offset", value: "~190 t/yr", sub: "Calculated annual sequestration" },
+            { label: "Hectares Restored", value: "14.6 Ha", sub: "Dart Valley buffer zone" }
           ].map((metric, i) => (
             <div key={i} className="bg-base-100 border border-white/10 rounded-3xl p-10 text-center shadow-xl hover:border-emerald-500/20 transition-colors">
               <p className="text-xs uppercase tracking-[0.2em] opacity-50 mb-4">{metric.label}</p>
