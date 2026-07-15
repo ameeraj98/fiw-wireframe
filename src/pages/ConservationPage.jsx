@@ -10,7 +10,7 @@ const ConservationPage = () => {
             Conservation
           </h1>
           <p className="mt-4 text-xl opacity-70 max-w-2xl leading-relaxed">
-            Protecting the Glenorchy Hillocks through a "Leave No Trace" philosophy, powered by non-invasive technology.
+            The future of our planet begins with the land beneath our feet. Every journey through The Hillocks helps restore native ecosystems, regenerate the landscapes of Aotearoa and protect the wild places that inspire us to imagine what comes next.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ const ConservationPage = () => {
       {/* 4. IMPACT METRICS - The Final Results */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
           <h2 className="px-6 text-center text-3xl md:text-4xl font-black uppercase tracking-tighter">
-            Reforestation Partnerships
+            Impact Metrics
           </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
